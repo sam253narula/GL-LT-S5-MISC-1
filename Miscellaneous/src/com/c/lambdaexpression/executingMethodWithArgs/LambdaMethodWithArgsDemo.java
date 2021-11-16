@@ -11,6 +11,7 @@ public class LambdaMethodWithArgsDemo {
 				return num * num;
 			}
 		};
+		
 		System.out.println("Square of 5 is " + calculateSquare.squareOf(5));
 		System.out.println();
 		System.out.println("Now With Lambda Expression");

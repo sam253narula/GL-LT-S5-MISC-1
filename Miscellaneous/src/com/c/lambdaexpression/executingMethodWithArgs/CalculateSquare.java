@@ -4,4 +4,5 @@ package com.c.lambdaexpression.executingMethodWithArgs;
 public interface CalculateSquare {
 
 	int squareOf(int num);
+	
 }

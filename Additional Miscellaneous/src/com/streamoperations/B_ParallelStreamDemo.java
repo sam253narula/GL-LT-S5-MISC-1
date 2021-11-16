@@ -16,18 +16,25 @@ public class B_ParallelStreamDemo {
 		// Create a Stream of String type
 		// Using the lines() method to read one line at a time
 		// from the text file
-	//	Stream<String> text = Files.lines(fileName.toPath());
+		//Stream<String> text = Files.lines(fileName.toPath());
 
 		// Use StreamObject.parallel() to create parallel streams
 		// Use forEach() to print the lines on the console
-	  	//text.parallel().forEach(System.out::println);
+//	  	text.parallel().forEach(t -> {
+//	  		//System.out.println(t);
+//	  		System.out.println(Thread.currentThread().getName());
+//	  		
+//	  	});
 
 		// Close the Stream
-		//text.close();
+	//	text.close();
 		
-		//  List<String> text = Files.readAllLines(fileName.toPath());
+		  List<String> text = Files.readAllLines(fileName.toPath());
           //System.out.println(text);
 	     //    Using parallelStream() to create parallel streams
-	    //    text.parallelStream().forEach(System.out::println);
+	        text.parallelStream().forEach( t -> {
+	        	System.out.println(t);
+	        	System.out.println(Thread.currentThread().getName());
+	        });
 	}
 }

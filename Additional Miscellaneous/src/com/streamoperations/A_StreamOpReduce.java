@@ -12,10 +12,10 @@ public class A_StreamOpReduce {
 		// The reduce method takes a BinaryOperator as a parameter.
 		// Here ans variable is assigned 0 as the initial value and i is added to it .
 		List<Integer> numbers = Arrays.asList(2, 3, 4, 5);
-		int even = numbers.stream().filter(x -> x % 2 == 0).reduce(0, (ans, x) -> {
+		int evenSumOfNumber = numbers.stream().filter(x -> x % 2 == 0).reduce(0, (ans, x) -> {
 			return ans + x;
 		});
-		System.out.println(even);
+		System.out.println(evenSumOfNumber);
 	}
 
 }

@@ -20,6 +20,6 @@ public class LambdaDemonstrationsIteratingAList {
 		System.out.println();
 		System.out.println("Now Iterating the list with lambda Expression");
 		numbers.forEach(n -> System.out.print(n + " "));
-
+		//numbers.stream().forEach(n -> System.out.print(n + " "));
 	}
 }

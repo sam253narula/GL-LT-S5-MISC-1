@@ -15,5 +15,8 @@ public class F_StreamOpSortedDemo {
 		Stream<String> namesStream = names.stream();
 		Stream<String> sortedNamesStream = namesStream.distinct().sorted();
 		sortedNamesStream.forEach(num -> System.out.println(num));
+		System.out.println();
+		names.stream().distinct().sorted().forEach(num -> System.out.println(num));
+
 	}
 }

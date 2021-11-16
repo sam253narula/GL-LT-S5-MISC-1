@@ -5,5 +5,8 @@ public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
 		CovidImmunable covidImmunable = () -> System.out.println("I am Vaccinated now");
 		covidImmunable.getVaccine();
+		
+		CovidImmunable notCovidImmunable = () -> System.out.println("I am not Vaccinated now");
+		notCovidImmunable.getVaccine();
 	}
 }

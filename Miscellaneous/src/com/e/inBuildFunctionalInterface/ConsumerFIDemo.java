@@ -10,7 +10,10 @@ public class ConsumerFIDemo {
 		
 		Consumer<Person> personComsumer = (person) -> System.out.println(person);
 		Person person = new Person("Samarth", 26, "male");
+		Person vivek = new Person("Vivek", 22, "male");
 		personComsumer.accept(person);
+		personComsumer.accept(vivek);
+		
 	}
 
 }
@@ -22,7 +25,6 @@ class Person {
 	private String gender;
 
 	public Person(String name, int age, String gender) {
-		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
